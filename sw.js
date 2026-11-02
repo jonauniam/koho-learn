@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kho-learn-v7';
+const CACHE_NAME = 'kho-learn-v10';
 const ASSETS = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
